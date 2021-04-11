@@ -6,28 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banana Speak</title>
     <style>
+
+        h1 {
+            width: 100%;
+            background-image: url("images/snp.jpg");
+            border-radius: 6rem;
+            color: #417297;
+            text-align: center;
+            height: 3rem;
+            font-size: 2.5rem;
+        }
+
+        body {
+            background-image: url("/images/snapchat.png");
+        }
+        
         textarea {
-            width: 80%;
+            width: 65%;
             height: 10vh;
             display: block;
             margin: 1rem;
             padding: 1rem;
+            background: #8503ff2a;
         }
 
         #output {
-            border: 1px solid black;
+            border: 1px solid rgb(0, 0, 0);
             height: 10vh;
-            width: 80%;
+            width: 65%;
             margin: 1rem;
             padding: 1rem;
+            color: white;
+            background-color: #6191b548;
         }
+
+        button {
+            position: relative;
+            padding: 15px 30px;
+            width: 15%;
+            color: rgb(119, 0, 255);
+            letter-spacing: 4px;
+            font-size: large;
+            overflow: hidden;
+            transition: 0.5s;
+            background-image: url("images/bna.jpg");
+        }
+
+        button
+
     </style>
 </head>
-<body>
-    <h1>talk babana</h1>
+<body id="bod">
+    <h1>Banana Talk</h1>
     <!-- <textarea name="" id="" cols="30" rows="10"></textarea> -->
     <textarea id="txt-input" placeholder="put your text in English and we will convert it to banana"></textarea>
-    <button id="btn-translate">Translate</button>
+    <button id="btn-translate"> <strong>Translate</strong></button>
 
     <div style="font-size: larger;">Output will come here 👇</div>
     <div id="output"></div>
